@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            overflow: hidden;
+            background: url(./images/Wendi.png) repeat-x center bottom, -webkit-linear-gradient(top, skyblue, white);
+            background-size: 100% auto;
+        }
+
+        h2 {
+            width: 100%;
+            float: left;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 10px auto;
+            float: left;
+            margin-left: 15px;
+            background: wheat;
+        }
+
+        td {
+            border: 1px solid #424242;
+            width: 25px;
+            height: 25px;
+        }
+
+        .c1 {
+            background: linear-gradient(to top, pink, red);
+        }
+
+        .c2 {
+            background: linear-gradient(to top, rgba(129, 176, 238, 0.993), rgb(124, 20, 165));
+        }
+
+        .c3 {
+            background: linear-gradient(to top, rgb(131, 162, 246), blue);
+        }
+
+        .c4 {
+            background: linear-gradient(to top, rgb(251, 255, 11), rgb(255, 251, 27));
+        }
+
+        .c5 {
+            background: linear-gradient(to top, rgb(248, 5, 228), rgb(156, 8, 255));
+        }
+
+        .c6 {
+            background: linear-gradient(to top, rgb(251, 9, 49), rgb(10, 0, 0));
+        }
+
+        .c7 {
+            background: linear-gradient(to top, rgb(94, 96, 98), rgb(251, 248, 245));
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id='score'>分数：0</h2>
+    <p>操作说明：方向上：旋转方块  方向左：方块左移  方向右：方块右移  空格：一键下落</p>
+    <script src="js/BLOCK_JSON.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/Block.js"></script>
+    <script src="js/Map.js"></script>
+    <script type="text/javascript">
+        var game = new Game();
+    </script>
+</body>
+
+</html>
