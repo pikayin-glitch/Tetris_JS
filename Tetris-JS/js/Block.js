@@ -112,7 +112,7 @@
     for (var j = 0; j < game.col; j++) {
       if (game.map.mapCode[0][j] != 0) {
         clearInterval(game.timer);
-        alert("游戏结束！您当前的得分为" + game.score);
+        alert("游戏结束！您当前的得分为：" + game.score);
       }
     }
   };

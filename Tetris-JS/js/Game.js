@@ -76,6 +76,7 @@
         var tr=document.getElementsByTagName("table")[0].getElementsByTagName("tr")[i];
         if(tr)
         tr.getElementsByTagName("td")[j].className='';
+        // 清空style
         }
       }
       for (var i = 0; i < 4; i++) {
@@ -83,13 +84,13 @@
          var tr=document.getElementsByTagName("table")[1].getElementsByTagName("tr")[i];
          if(tr)
          tr.getElementsByTagName("td")[j].className='';
+        // 清空style
         }
       }
     };
     Game.prototype.bindEvent = function () {
       // 备份
       var self = this;
-  
       window.onkeydown=function (event) {
         console.log(event.keyCode);
         // console.log(event.keydown);

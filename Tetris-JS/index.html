@@ -1,11 +1,15 @@
+<!-- @author pikayin
+////////////////////
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- style 内容较少，不必独立出来 -->
     <style>
         * {
             margin: 0;
@@ -15,11 +19,13 @@
         html {
             height: 100%;
         }
-
+        
         body {
             overflow: hidden;
             background: url(./images/Wendi.png) repeat-x center bottom, -webkit-linear-gradient(top, skyblue, white);
-            background-size: 100% auto;
+            max-width: 800px;
+            margin: 0 auto;
+            background-size: cover;
         }
 
         h2 {
@@ -32,7 +38,8 @@
             margin: 10px auto;
             float: left;
             margin-left: 15px;
-            background: wheat;
+            background: rgb(160, 241, 187);
+            opacity: 50%;
         }
 
         td {
@@ -66,12 +73,12 @@
         }
 
         .c7 {
-            background: linear-gradient(to top, rgb(94, 96, 98), rgb(251, 248, 245));
+            background: linear-gradient(to top, rgb(94, 96, 98), rgb(251, 248, 245)); 
         }
     </style>
 </head>
 
-<body>
+<body text-align="center">
     <h2 id='score'>分数：0</h2>
     <p>操作说明：方向上：旋转方块  方向左：方块左移  方向右：方块右移  空格：一键下落</p>
     <script src="js/BLOCK_JSON.js"></script>
@@ -81,6 +88,7 @@
     <script type="text/javascript">
         var game = new Game();
     </script>
+
 </body>
 
 </html>
